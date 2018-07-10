@@ -1,0 +1,48 @@
+安装：
+使用Expo开发应用程序需要两种工具：本地开发工具和用于打开应用程序的移动客户端。
+
+本地开发工具：XDE(exp)
+桌面工具：XDE
+XDE代表Expo发展环境。 它是一个独立的桌面应用程序，包含您开始使用所需的所有依赖项。
+下载适用于macOS，Windows（64位）或Linux的最新版XDE。
+在Linux上，使用chmod a+ x xde * .AppImage和./xde*.AppImage。
+
+可选的命令行工具：exp
+对于喜欢使用命令行的用户，exp是XDE的替代品。 您可以选择任何一个。 某些高级Expo功能可能要求您在exp之后的版本中使用。
+您可以通过运行npm i -g exp来安装exp。
+
+移动客户端：适用于iOS和安卓的Expo
+Expo 客户端能够帮助你实时预览正在开发的项目。当您从XDE或exp启动项目服务时，它会生成一个开发URL，您可以在Expo 客户端中打开该URL以预览您的应用程序。 在Android上，Expo 客户端还可用于在expo.io上查看其他人的项目。 Expo 客户端适用于真机和模拟器。
+
+在您的设备上安装Expo 客户端
+您可以从应用市场下载 Expo 安卓版客户端 或者 从app store 下载Expo iOS版客户端
+需要的安卓和iOS版本：Expo客户端最低支持在安卓4.4 和 iOS 9的设备上运行。
+
+您无需在模拟器上手动安装Expo客户端，因为XDE会自动执行此操作。 请参阅本指南的下一部分。
+
+
+iOS模拟器
+首先你得有一台Mac系统的电脑，然后通过Apple App Store安装Xcode。（或者在苹果开发者工具下载网站中下载。地址：https://developer.apple.com/download/more/）。 这需要一段时间，你可选择稍作休息，也可以着手处理其他事情。 完成安装之后，打开Xcode，点击顶部菜单栏的Xcode -> preferences并单击“Components”选项卡，从列表中安装你想要的模拟器版本。
+
+如果您打开了模拟器并且您在XDE中打开了一个项目，您可以点击Device -> open on iOS simulator 按钮，他会将 Expo 客户端安装到模拟器并在其中打开您的应用程序。
+
+无法正常工作？ 有时XDE在自动安装Expo客户端的时候会发生错误，这通常是由于您的环境或Xcode工具链中存在很小的差异造成的。 如果您需要手动在模拟器上安装Expo客户端，可以按照以下步骤操作：
+下载最新的模拟器版本。
+获取你模拟器的存放路径。 你应该得到一个像Exponent-X.XX.X这样的目录。
+确保模拟器正在运行。
+在终端上，运行xcrun simctl install booted [提取目录的路径]。
+
+安卓模拟器
+下载Genymotion（免费版）并按照Genymotion安装指南。 Genymotion 安装完成之后，先创建一个虚拟设备 - 我们推荐使用Nexus 5，Android版本由你决定。 准备好后启动虚拟设备。
+如果您打开了模拟器并且您在XDE中打开了一个项目，您可以点击Device -> open on Android 按钮，他会将 Expo 客户端安装到模拟器并在其中打开您的应用程序。 如果您遇到任何问题，请按照我们的Genymotion指南进行操作。
+
+Node.js
+当你开始使用Expo的时候，你并不一定需要安装Node.js。但是当你开始实际构建项目的时候，你就会需要用到它。点击下载最新版的Node.js（https://nodejs.org/en/）
+
+Watchman
+如果某些macOS用户未在其计算机上安装Watchman，则可能会遇到问题，因此我们建议您安装Watchman。 Watchman会观察和记录文件的变化，然后触发相应的影响操作，并且已经在React Native的内部使用。 下载并安装Watchman。（https://facebook.github.io/watchman/docs/install.html）
+
+
+
+
+
