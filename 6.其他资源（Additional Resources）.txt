@@ -1,0 +1,39 @@
+其他资源
+以下资源对于学习Expo及其项目所需要的依赖资源非常有用。
+
+Expo 博客
+Exposition 我们的官方博客，我们每月发布新版本说明，也会不定时发布其他Expo的相关内容。
+
+下面是关于如何使用Expo的教程
+
+Harvard CS50 Mobile (免费)（https://cs50.github.io/mobile/）
+repl.it - React Native - Build your first app in the next 5 minutes (免费)（https://repl.it/site/react_native）
+React Europe - Introduction to React Native Workshop videos on YouTube (免费)（https://www.youtube.com/playlist?list=PLCC436JpVnK2RFms3NG9ubPToWCNbMLbT）
+RMOTR - React Native & Expo for Mobile Development (收费)（https://rmotr.com/introduction-to-react-native-and-expo）
+Udemy - React Native: Advanced Concepts by Stephen Grider (收费)（https://www.udemy.com/react-native-advanced/）
+Udacity - React Nanodegree (收费)（https://www.udacity.com/course/react-nanodegree--nd019）
+
+React Native
+React Native Express - 这是开始学习React-Native最好的方式，里面包含了react和react native模块的使用方法和示例代码。(http://www.reactnativeexpress.com/)
+Official React Native Documentation（React Native官方文档）(https://facebook.github.io/react-native/docs/sample-application-movies.html)
+React Native Fundamentals (Egghead.io上的视屏课程)https://egghead.io/courses/react-native-fundamentalsAnimating React Native UI Elements (Egghead.io上的视屏课程)https://egghead.io/courses/animate-react-native-ui-elements
+Learning React Native (书籍) http://shop.oreilly.com/product/0636920041511.do
+Chat Tutorial by Jani Eväkallio (https://github.com/jevakallio/react-native-chat-tutorial)
+
+
+开发者大会
+React Native Europe - The Building of Snack（https://www.youtube.com/watch?v=Uk45O6AygH8）
+React Europe - Expo Snack （https://www.youtube.com/watch?v=U0vnAW4UNXE）
+React Conf - Create React Native App （https://www.youtube.com/watch?v=9baaVjGdBqs）
+Reactive - From React web to native mobile （Reactive - From React web to native mobile）
+React Europe - Building li.st for Android with Expo and React Native （https://www.youtube.com/watch?v=cI9bDvDEsYE）
+CS50 at Harvard University - Easily Build Apps with React Native （https://www.youtube.com/watch?v=uFrAZfPW9JY）
+Apollo Day - GraphQL at Expo （Apollo Day - GraphQL at Expo）
+
+React
+React Express （http://www.react.express/）
+React lessons on Egghead.io - 几个覆盖React和Redux基础知识的课程列表。 （https://egghead.io/technologies/react）
+Official React Documentation(官方文档)（https://facebook.github.io/react/docs/getting-started.html）
+
+JavaScript
+ES6 Katas - 用于练习ES6语法，以熟悉React Native中使用的新JavaScript功能。

@@ -1,0 +1,40 @@
+XDE 使用指南
+
+当您第一次打开XDE时，您会看到此登录屏幕。 如果您已经拥有帐户，请继续并登录。如果没有账号，您可以点击注册按钮进行注册。
+
+主界面
+恭喜您登陆成功。在此屏幕中，您可能想要创建新项目或打开现有项目。 为方便起见，我们列出了您最近打开的一些项目。
+
+Project弹窗
+点击Project，你会看到你可以从这里做的一切。 当然，你无法关闭项目或在finder等中显示它，因为你还没有打开它。
+
+如果您想的话可以随时退出
+您可以随时点击右上角的用户名然后退出。 或者退出。 是能确定这两次词到底哪一个更好呢？
+
+项目界面
+现在我们打开了一个新的项目。 左侧窗格是React Native相关信息，您可以在“运行”（https://docs.expo.io/versions/v28.0.0/guides/up-and-running.html#up-and-running）和“运行方式”（https://docs.expo.io/versions/v28.0.0/guides/how-expo-works.html#how-expo-works）中了解更多信息。 右侧窗格用于设备日志，您可以在查看日志中阅读更多信息。（https://docs.expo.io/versions/v28.0.0/guides/logging.html#logging）
+
+分享
+向任何能访问互联网的人发送您的应用程序链接。 如果您的移动设备没有和PC设备处于同一网段中，那么这个功能对您也非常的有用。译注：想要通过互联网直接访问，前提要把控制台上面的链接地址设置成Tunnel模式。您得到的链接大概像这样  exp://zc-nbb.xxxxx.testtwo.exp.direct:80
+
+在移动设备上打开
+Device按钮可让您在设备或模拟器上快速打开应用程序。 请 运行 中阅读更多内容（https://docs.expo.io/versions/v28.0.0/guides/up-and-running.html#up-and-running）。
+
+开发模式
+您经常希望在开发模式下处理项目。 这使得项目会运行得慢一些，因为它添加了大量的代码运行时验证，以警告您潜在的问题，但它还使您可以访问实时更新，热更新，远程调试和元素检查器。 如果要测试与性能相关的任何内容，请禁用开发模式并重新加载应用程序。
+
+Project弹窗（项目打开的时候）
+除了在主屏幕提供的选项外，打开项目后，您还可以访问一些快捷方式，例如在finder中显示项目目录。
+
+发布项目
+当运行项目时，XDE会为其提供一个临时URL，该URL根据您自己算计的IP生成。 当您准备与其他人共享项目时，您可以发布项目来让任何人都可以使用Expo 客户端打开永久的URL（类似于expo.io/@your-username/your-app-slug）。
+当您单击XDE中的“发布”按钮时，系统会要求您确认是否希望项目可公开让所有人使用。 XDE需要一些时间来生成缩小的JS包并将您的资源上传到我们的服务器，一旦完成，就会打印出应用程序发布的URL。 您可以在“Expo如何运作”（https://docs.expo.io/versions/v28.0.0/guides/how-expo-works.html#how-expo-works）和“发布指南”（https://docs.expo.io/versions/v28.0.0/guides/publishing.html）中阅读有关如何发布的详情。
+
+
+
+
+
+
+
+
+

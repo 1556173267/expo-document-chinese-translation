@@ -1,0 +1,49 @@
+代理故障排除
+Mac OS 代理配置（Sierra）
+如果出现任何问题，您可以打开网络系统偏好设置 -> 高级 -> 代理 中勾选自动代理配置 然后把代理文件设置成：你的路由器ip：端口 / proxy.pac
+
+概览
+为了在公司的Wi-Fi网络下 在Mac iOS模拟器中运行它，需要一个本地代理的配置管理器Charles。我们团队的iOS 开发团队也在使用它。 你可以先了解Charles，然后使用它。它会是你的好助手。
+
+打开 Mac OS 网络系统偏好设置
+1.打开Mac的系统偏好设置（Apple菜单>系统偏好设置）。
+2.转到网络
+3.确保您网络控制面板上设置的位置是代理网路，而不是“自动”。
+4.在左侧或以太网连接中选择Wi-Fi后，单击窗口右下角的“高级”。
+
+配置代理地址
+1.如果已选中“自动代理配置”那么先取消选中。
+2.勾选“网页代理(HTTP)”，然后把网页代理服务器设置为 127.0.0.1:8888
+3.勾选“安全网页代理(HTTPS)”，然后把安全网页代理服务器设置为 127.0.0.1:8888
+
+配置 Charles
+1.打开Charles
+2.如果它提示您，他不被允许管您的Mac OS的网络配置，那么请您根据上一个步骤进行手动配置 （如果您更改了Charles端口，请将上一步更新为正确的端口，而不是默认的8888，这里的上一步指的是“配置代理地址”）
+3.在Charles的菜单中，点击 Proxy > External Proxy Settings，选中 Use external proxy servers
+4.选中 Web Proxy（HTTP），然后输入 你的代理地址：端口
+5.勾选 Proxy server requires a password（代理服务器密码设置）
+6.域名：您的域名，用户名：您的用户名 密码：您的密码
+7.Secure Web Proxy（HTTPS）的设置步骤和Web Proxy一样。请务必填写相同的代理， 域名，用户名和密码字段。
+8.在下方的 Bypass external proxies for the following hosts文本框中：输入
+  localhost
+  *.local
+
+您可能需要包含您的邮件服务器地址，和您公司的局域网地址。
+1.选择"Always bypass external proxies for localhost"
+
+iOS 模拟器配置
+如果您现有的iOS模拟器自定义设置无效，请从菜单中选择“模拟器>重置内容和设置”。
+如果您仍然打开模拟器，请退出。
+现在，在Charles的“帮助”菜单>安装Charles Root证书，然后再次为iOS模拟器安装Charles Root证书
+
+技术说明：整个过程是必需的，因为iOS模拟器提供的是bum代理证书而不是实际的证书，并且不允许使用https://exp.host/来运行Expo。
+
+另请注意：配置需要访问Internet的应用程序（如Spotify），可以使用http：// localhost：8888作为代理。 某些应用程序（例如Chrome和Firefox），您可以在设置中配置使用“系统网络首选项”，它将使用Charles：8888，或者不使用代理，具体取决于您在Apple菜单/网络中设置“位置”的方式 优先。 如果设置为“自动”，则不使用代理，如果将其设置为“您的代理网络”，则使用代理并且Charles将需要运行。
+
+
+
+
+
+
+
+

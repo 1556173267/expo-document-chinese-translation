@@ -1,0 +1,33 @@
+项目生命周期
+Expo使您可以轻松开始编写应用程序，但是Expo也可以帮助您的项目直到发布，上线。 以下是您可能会使用的工具和服务的概述。
+本指南旨在对Expo提供的内容进行详细解释。 对于钻研精神，这里将详细介绍这些功能的技术实现。
+
+Expo 项目的生命周期
+
+创建一个 Expo 项目
+您只需使用我们的桌面工具和文本编辑器即可创建新的Expo项目。 有关创建项目，在设备上运行项目以及编辑项目的快速指南，请参阅“运行”。（https://docs.expo.io/versions/v28.0.0/guides/up-and-running.html）
+Expo应用程序是React Native应用程序。 最快的入门方法是阅读“启动并运行”（https://docs.expo.io/versions/v28.0.0/guides/up-and-running.html）指南，但您也可以转换现有的React Native应用程序或使用由create-react-native-app生成的项目。
+
+本地开发与调试
+当您运行Expo项目时，我们会通过您的电脑启动一个服务实例。 如果关闭项目或关闭计算机，则启动的服务将会被关闭。（您将不能再移动设备上进行预览）
+在此期间，您可以使用Expo移动端客户端进行项目的与构建，然后您将可以进行实时预览来测试您的app。它会要求您的计算机提供项目的本地副本（通过localhost，LAN或隧道），下载并运行它。 您可以利用各种开发工具，例如调试，查看日志流文件，检查元素，通过热更新来重新加载等。
+
+发布您的项目
+如果您单击XDE中的“发布”按钮，我们会将您应用的压缩副本上传到我们的CDN，并为您提供expo.io/@your-username/your-app-slug形式的可共享网址。
+您可以立即把此链接分享给安装有Android Expo客户端的任何人，点击阅读更多关于发布的信息。
+在iOS上，您需要使用Apple TestFlight与他人共享您的应用。
+
+更新您的应用
+您可以在不影响(中断)用户使用的情况下继续在本地进行更改。 每当您将更改的内容发布到线上地址时，您的新版本都会立即显示给拥有该链接的任何人。
+我们经常发布Expo SDK的更新。 每次更新都包含有关如何升级项目的说明。 如果您决定更新到我们SDK的较新版本，旧版本的副本将继续正常工作。 用户将下载其 客户端 支持的最新副本。
+
+发布到苹果的app store 和 Google Play
+当您准备好在Apple App Store和Google Play商店上正式推出您的应用时，Expo可以生成用于上线的.ipa和.apk 打包文件，您可以直接把ipa文件提交到app store，把apk文件直接提交到 google paly。 我们在服务器上生成它们，因此您仍然不需要任何Apple或Google软件。 请参阅有关分发应用程序的文档。（https://docs.expo.io/versions/v28.0.0/distribution/index.html）
+
+修改原生代码
+您只需编写JS即正常开发应用程序一直到发布到App Store和Google Play Store。 但是，如果您遇到Expo未涵盖的特殊高级需求，我们提供了把原生代码放到ExpoKit的能力，ExpoKit是用Xcode和Android Studio 生成的原生代码的表示。
+注意：如果您选择把原生代码放到ExpoKit，那么我们将不再提供Expo 的一些服务。 例如，我们无法再为您生成独立版本。 您需要自己管理用于上架的构建版本。
+
+
+
+
