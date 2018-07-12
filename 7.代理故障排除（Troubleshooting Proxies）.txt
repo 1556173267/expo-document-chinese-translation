@@ -38,9 +38,33 @@ iOS 模拟器配置
 
 技术说明：整个过程是必需的，因为iOS模拟器提供的是bum代理证书而不是实际的证书，并且不允许使用https://exp.host/来运行Expo。
 
-另请注意：配置需要访问Internet的应用程序（如Spotify），可以使用http：// localhost：8888作为代理。 某些应用程序（例如Chrome和Firefox），您可以在设置中配置使用“系统网络首选项”，它将使用Charles：8888，或者不使用代理，具体取决于您在Apple菜单/网络中设置“位置”的方式 优先。 如果设置为“自动”，则不使用代理，如果将其设置为“您的代理网络”，则使用代理并且Charles将需要运行。
+另请注意：配置需要访问Internet的应用程序（如Spotify），可以使用http：// localhost：8888作为代理。 某些应用程序（例如Chrome和Firefox），您可以在系统设置中配置使用“系统网络首选项”，它将使用Charles：8888，或者不使用代理，具体取决于您在Apple菜单/网络中设置“位置”的设置方式。 如果设置为“自动”，则不使用代理，如果将其设置为“您的代理网络”，则使用代理并且Charles将需要运行。
 
+命令行程序代理配置
+npm,git,Brew,Curl和其他命令行程序需要使用代理的配置：
 
+给npm配置代理
+打开 ~/.npmrc 然后 输入以下内容
+http_proxy=http://localhost:8888
+https_proxy=http://localhost:8888
+
+为git配置代理
+打开 ~/.gitconfig 然后 输入以下内容
+[http]
+ 	proxy = http://localhost:8888
+[https]
+	proxy = http://localhost:8888
+
+为命令行程序配置代理
+依赖于你的shell工具，然后进行配置，打开 ~/.bashrc, ~/.bash_profile或~/.zshrc 或者任何一个你配置shell环境变量的地方，并输入以下内容：
+	export HTTP_PROXY="http://localhost:8888"
+	export http_proxy="http://localhost:8888"
+	export ALL_PROXY="http://localhost:8888"
+	export all_proxy="http://localhost:8888"
+	export HTTPS_PROXY="http://localhost:8888"
+	export https_proxy="http://localhost:8888"
+
+注意：如果您想取消对npm，git或其他命令行工具的代理设置，则需要打开上一步的配置文件，然后在之前输入内容的每一行最开头输入#以注释这些内容。如果您愿意，也可以使用命令行代理管理器。
 
 
 
