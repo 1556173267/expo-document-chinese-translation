@@ -71,8 +71,8 @@ Expo应用程序支持哪些版本的Android和iOS？
 Expo应用程序支持在安卓 4.4和iOS 9以上的设备上运行。
 
 我可以在Expo上使用Node.js包吗？
-如果程序包依赖于Node标准库API，则无法将其与Expo一起使用。 Node标准库是一组主要在C ++中实现的功能，它将函数公开给不属于JavaScript语言规范的JavaScript，例如读写文件系统的能力。 React Native，并且通过扩展Expo，不包括Node标准库，就像Chrome和Firefox不包含它一样。 JavaScript是一种在许多环境中使用的语言，从移动应用程序（在我们的例子中）到服务器，当然还有在网站上。这些上下文都包含它们自己的运行时环境，它们向JavaScript公开不同的API，具体取决于上下文中有意义的内容。
-作为旁注，一些Node标准库API不依赖于C ++扩展，而是可以直接在JavaScript中实现，例如url和assert。如果您希望使用的程序包仅依赖于这些Node API，则可以从npm安装它们，该程序包将起作用。
+如果程序包依赖于Node标准库API，则无法将其与Expo一起使用。Node标准库大部分源码都是通过c++语言是实现，它将原本不属于JavaScript能力的函数通过c++封装暴露给了JavaScript，例如读写文件系统的能力。 React Native，Expo（对React-Native的封装），都不包含Node标准库，就像Chrome和Firefox不包含它一样。 JavaScript是一种在许多环境中使用的语言，从移动应用程序（比如Expo项目）到服务器，当然还有在网站上。这些上下文（场景）都包含它们自己的运行时环境，它们向JavaScript提供不同的API，具体取决于各个上下文（场景中）定义的一些规范。
+另外，一些Node标准库API不依赖于C++扩展，可以直接通过JavaScript实现，例如url和assert。如果您想使用的程序包仅依赖于这些Node API，则可以通过npm来安装他们，该程序包能够在Expo中使用。
 
 我可以同时使用Relay和Expo吗？
 你可以。只要在新的Expo 项目中 修改您的.babelrc文件中的内容：
